@@ -1,0 +1,16 @@
+<configuration>
+  <appender name="consola" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>
+        %n
+        %d{HH:mm}
+        [%thread] %-5level
+        LOG: %logger
+        MENSAJE: %msg
+      </pattern>
+    </encoder>
+  </appender>
+  <root level="info">
+    <appender-ref ref="consola" />
+  </root>
+</configuration>
